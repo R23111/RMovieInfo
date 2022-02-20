@@ -1,4 +1,3 @@
-from operator import index
 import imdb
 import interface
 
@@ -6,9 +5,7 @@ def main():
     ia = imdb.Cinemagoer()
     interface.clear_scr()
     interface.greetings()
-    
-    len([0,1,2])
-    
+        
     search = input("\n\nSearch: ")    
     search_result = ia.search_movie(search)    
     search_index = interface.show_search_result(search_result)
